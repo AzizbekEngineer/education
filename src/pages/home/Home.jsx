@@ -1,11 +1,11 @@
 import React from "react";
-import Events from "../../components/events/Events";
 import { eventsData } from "../../constants";
+import EventsComponent from "../../components/events/EventsComponent";
 
 const Home = () => {
     return (
         <div>
-            <Events data={eventsData} />
+            <EventsComponent data={eventsData} />
         </div>
     );
 };

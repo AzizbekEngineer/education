@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header">
             <div className="container header__container">
                 <div className="header__logo">
-                    <a href="">
+                    <Link to={"/"}>
                         <img
                             width={150}
                             height={80}
@@ -16,7 +16,7 @@ const Header = () => {
                             alt="logo"
                             style={{ objectFit: "cover" }}
                         />
-                    </a>
+                    </Link>
                 </div>
                 <ul className="header__list">
                     <li className="header__item">
