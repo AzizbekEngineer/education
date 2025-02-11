@@ -1,0 +1,51 @@
+.opportunities {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #474747;
+
+    &__title {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    &__sub-title {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    &__cards {
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__card {
+        padding: 30px 15px;
+        color: #474747;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+
+    }
+
+    &__card__title {
+        text-transform: capitalize;
+        text-align: center;
+        line-height: normal;
+        font-weight: 500;
+    }
+
+    &__card__text {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        svg {
+            font-size: 80px;
+        }
+    }
+}
