@@ -1,5 +1,12 @@
 .header {
-    &__container {
+    &__top {
+        background: red;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -8,5 +15,6 @@
     &__list {
         display: flex;
         align-items: center;
+        gap: 30px;
     }
 }
