@@ -5,6 +5,7 @@ import Opportunities from "./components/opportunities/Opportunities";
 import Success from "./components/success/Success";
 import Hero from "./components/hero/Hero";
 import NewsSection from "./components/newsSection/NewsSection";
+import Business from "./components/business/Business";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Opportunities />
       <Success />
       <NewsSection />
+      <Business />
       <EventsComponent data={eventsData} />
     </div>
   );
