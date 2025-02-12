@@ -20,16 +20,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
-    // background-color: #222;
+    padding: 40px;
+    // background: black;
 }
 
 .news-card {
     padding: 10px;
-    background: #2b2b2b;
+    background: white;
     border-radius: 12px;
     overflow: hidden;
-    color: white;
+    color: black;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: grid;
