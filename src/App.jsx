@@ -8,6 +8,7 @@ import Layout from "./layout/Layout";
 import Trainings from "./pages/trainings/Trainings";
 import Projects from "./pages/projects/Projects";
 import Documents from "./pages/documents/Documents";
+import About from "./pages/about/About";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/trainings" element={<Trainings />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/document" element={<Documents />} />
+          <Route path="/business" element={<About />} />
         </Routes>
       </Layout>
     </>

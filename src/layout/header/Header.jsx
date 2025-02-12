@@ -55,7 +55,7 @@ const Header = () => {
                 <Link to="projects">Loyiha haqida</Link>
               </span>
               <span className="header__item">
-                <Link>Biznes haqida</Link>
+                <Link to={"business"}>Biznes haqida</Link>
               </span>
               <span className="header__item">
                 <Link to={"document"}>Hujjatlar</Link>
