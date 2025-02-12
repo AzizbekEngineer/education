@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../assets/icons/logo.png";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdClose } from "react-icons/md";
 import "./header.scss";
 import { Link, useLocation, useParams } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { pathname } = useLocation();
+  const [hide, setHide] = useState(false);
+
   console.log(pathname);
   //
   useEffect(() => {}, [pathname]);
@@ -44,9 +48,9 @@ const Header = () => {
           </Link>
         </div>
         <ul
-          className={`header__list ${isScrolled ? "scrolled" : ""} ${
-            pathname === "/" ? "" : "black"
-          }`}
+          className={`header__list ${hide ? "header__show" : ""} ${
+            isScrolled ? "scrolled" : ""
+          } ${pathname === "/" ? "" : "black"} `}
         >
           <li className="header__item header__dropdown">
             <span className="header__item">Loyiha haqida</span>
@@ -79,6 +83,15 @@ const Header = () => {
             <Link to="contact">Aloqa</Link>
           </li>
         </ul>
+        {!hide ? (
+          <button onClick={() => setHide(true)} className="header__menu">
+            <RxHamburgerMenu />
+          </button>
+        ) : (
+          <button onClick={() => setHide(false)} className="header__menu">
+            <MdClose />
+          </button>
+        )}
       </div>
     </div>
   );
