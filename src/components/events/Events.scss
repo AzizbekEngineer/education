@@ -1,7 +1,6 @@
 .events {
     text-align: center;
-    // padding: 40px 20px;
-    padding-top: 80px;
+    padding: 80px 0 30px;
 
     &__subtitle {
         font-size: 1rem;
@@ -60,5 +59,21 @@
     &__description {
         font-size: 0.95rem;
         color: #444;
+    }
+}
+
+@media (max-width:1290px) {
+    .event-card {
+        &__title {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .events {
+        &__list {
+            grid-template-columns: 1fr;
+        }
     }
 }

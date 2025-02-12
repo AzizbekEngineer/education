@@ -121,4 +121,47 @@
             width: 100%;
         }
     }
+
+    @media (max-width:700px) {
+        &__box {
+            padding: 40px 10px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__info {
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media (max-width:530px) {
+        &__img {
+            height: 350px;
+        }
+    }
+
+    @media (max-width:400px) {
+        &__title {
+            font-size: 17px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img {
+            height: 280px;
+        }
+    }
 }

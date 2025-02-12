@@ -72,7 +72,7 @@
             background: #a8a8a849;
             color: white;
             outline: none;
-            border: 1px solid rgba(0, 0, 0, 0.363);
+            border: 1px solid white;
         }
 
         input:active {
@@ -101,5 +101,17 @@
         width: 100%;
         // background: #A8A8A8;
         background: white;
+    }
+
+    @media (max-width:900px) {
+        &__top {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width:650px) {
+        &__top {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }

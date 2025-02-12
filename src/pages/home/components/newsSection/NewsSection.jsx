@@ -51,7 +51,6 @@ const NewsSection = () => {
             <div className="news-image">
               <img src={news.image} alt="News" />
               <span className="news-tag">
-                {" "}
                 <FaGripLinesVertical /> News
               </span>
             </div>

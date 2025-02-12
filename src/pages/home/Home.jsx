@@ -13,9 +13,9 @@ const Home = () => {
       <Hero />
       <Opportunities />
       <Success />
-      {/*<NewsSection />
+      <NewsSection />
       <Business />
-      <EventsComponent data={eventsData} />*/}
+      <EventsComponent data={eventsData} />
     </div>
   );
 };
