@@ -75,7 +75,7 @@
             top: 80px;
             width: 100%;
             height: calc(100vh - 80px);
-            background: #2a2324;
+            background: #2a2324 !important;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
@@ -84,6 +84,10 @@
             transition: transform 0.7s ease;
             z-index: 1;
             transform: translateX(-100%);
+        }
+
+        &__item {
+            color: white;
         }
 
         &__show {

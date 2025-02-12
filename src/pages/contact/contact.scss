@@ -51,6 +51,20 @@
     &__info {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
+    }
+
+    @media (max-width:530px) {
+        &__form {
+            padding: 15px 10px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__info {
+            flex-direction: column;
+        }
     }
 }

@@ -9,6 +9,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { pathname } = useLocation();
   const [hide, setHide] = useState(false);
+  const [close, setClose] = useState(false);
 
   console.log(pathname);
   //
@@ -37,7 +38,7 @@ const Header = () => {
     >
       <div className="container header__container">
         <div className="header__logo">
-          <Link to={"/"}>
+          <Link onClick={() => setHide(false)} to={"/"}>
             <img
               width={150}
               height={80}
@@ -56,31 +57,47 @@ const Header = () => {
             <span className="header__item">Loyiha haqida</span>
             <div className="header__dropdown-open">
               <span className="header__item">
-                <Link to="projects">Loyiha haqida</Link>
+                <Link onClick={() => setHide(false)} to="projects">
+                  Loyiha haqida
+                </Link>
               </span>
               <span className="header__item">
-                <Link to={"business"}>Biznes haqida</Link>
+                <Link onClick={() => setHide(false)} to={"business"}>
+                  Biznes haqida
+                </Link>
               </span>
               <span className="header__item">
-                <Link to={"document"}>Hujjatlar</Link>
+                <Link onClick={() => setHide(false)} to={"document"}>
+                  Hujjatlar
+                </Link>
               </span>
             </div>
           </li>
 
           <li className="header__item">
-            <Link to="">Yangiliklar</Link>
+            <Link onClick={() => setHide(false)} to="">
+              Yangiliklar
+            </Link>
           </li>
           <li className="header__item">
-            <Link to="/trainings">Treninglar</Link>
+            <Link onClick={() => setHide(false)} to="/trainings">
+              Treninglar
+            </Link>
           </li>
           <li className="header__item">
-            <Link to="/events">Tadbirlar</Link>
+            <Link onClick={() => setHide(false)} to="/events">
+              Tadbirlar
+            </Link>
           </li>
           <li className="header__item">
-            <Link to="">Sorovnomalar</Link>
+            <Link onClick={() => setHide(false)} to="">
+              Sorovnomalar
+            </Link>
           </li>
           <li className="header__item">
-            <Link to="contact">Aloqa</Link>
+            <Link onClick={() => setHide(false)} to="contact">
+              Aloqa
+            </Link>
           </li>
         </ul>
         {!hide ? (
