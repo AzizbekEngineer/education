@@ -48,9 +48,21 @@ const Header = () => {
             pathname === "/" ? "" : "black"
           }`}
         >
-          <li className="header__item">
-            <Link to="">Loyiha haqida</Link>
+          <li className="header__item header__dropdown">
+            <span className="header__item">Loyiha haqida</span>
+            <div className="header__dropdown-open">
+              <span className="header__item">
+                <Link to="projects">Loyiha haqida</Link>
+              </span>
+              <span className="header__item">
+                <Link>Biznes haqida</Link>
+              </span>
+              <span className="header__item">
+                <Link to={"document"}>Hujjatlar</Link>
+              </span>
+            </div>
           </li>
+
           <li className="header__item">
             <Link to="">Yangiliklar</Link>
           </li>
