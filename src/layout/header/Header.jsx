@@ -76,7 +76,7 @@ const Header = () => {
             <Link to="">Sorovnomalar</Link>
           </li>
           <li className="header__item">
-            <Link to="">Aloqa</Link>
+            <Link to="contact">Aloqa</Link>
           </li>
         </ul>
       </div>

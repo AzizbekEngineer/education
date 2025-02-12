@@ -103,12 +103,22 @@
             cursor: pointer;
 
             img {
-                transform: scale(1.02); // Rasmni biroz kattalashtiramiz
+                transform: scale(1.02);
             }
 
             &::after {
                 opacity: 1; // Hover bo‘lganda rasm ustida rang chiqadi
             }
+        }
+    }
+
+    @media (max-width:1050px) {
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+
+        &__img {
+            width: 100%;
         }
     }
 }

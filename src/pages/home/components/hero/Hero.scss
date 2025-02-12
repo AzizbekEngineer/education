@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    padding: 15px;
 
     &-overlay {
         position: absolute;
@@ -20,26 +21,31 @@
         z-index: 1;
     }
 
-    & > * {
+    &>* {
         position: relative;
         z-index: 2;
     }
 
     &__subtitle {
+        text-align: center;
         color: #fff;
         font-size: 24px;
     }
+
     &__title {
         font-size: 48px;
         color: #fff;
     }
+
     &__desc {
         color: #fff;
     }
+
     &__buttons {
         display: flex;
         align-items: center;
         gap: 30px;
+
         button {
             padding: 10px 20px;
             font-size: 18px;
@@ -48,20 +54,104 @@
             background: transparent;
             transition: 0.3s ease-in-out;
         }
+
         button:first-child {
             background: #00d4c6;
             border: 1px solid transparent;
         }
+
         button:first-child:hover {
             background: transparent;
             border-color: #00d4c6;
         }
+
         button:last-child {
             border: 1px solid #00d4c6;
         }
+
         button:last-child:hover {
             border-color: transparent;
             background: #00d4c6;
+        }
+    }
+
+    @media (max-width:910px) {
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width:700px) {
+        gap: 20px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__buttons {
+            gap: 20px;
+
+            button {
+                padding: 8px 16px;
+                font-size: 18px;
+            }
+        }
+
+        &__desc {
+            text-align: center;
+        }
+    }
+
+    @media (max-width:520px) {
+        gap: 15px;
+
+        &__title {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__buttons {
+            gap: 15px;
+
+            button {
+                padding: 6px 14px;
+                font-size: 16px;
+            }
+        }
+
+        &__desc {
+            text-align: center;
+        }
+    }
+
+    @media (max-width:405px) {
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__desc {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width:405px) {
+        &__buttons {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }
