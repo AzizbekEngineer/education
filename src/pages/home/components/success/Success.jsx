@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFly, FaAudible } from "react-icons/fa";
 import { FaUmbrellaBeach } from "react-icons/fa6";
-import img from "../../../../assets/icons/logo.jpg";
+import img from "../../../../assets/icons/logo.png";
 import "./success.scss";
 
 const Success = () => {

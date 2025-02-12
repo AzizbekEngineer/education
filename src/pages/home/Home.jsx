@@ -4,14 +4,16 @@ import EventsComponent from "../../components/events/EventsComponent";
 import Opportunities from "./components/opportunities/Opportunities";
 import Success from "./components/success/Success";
 import Hero from "./components/hero/Hero";
+import NewsCard from "./components/newsCard/newsCard";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <EventsComponent data={eventsData} />
       <Opportunities />
       <Success />
+      <NewsCard />
+      <EventsComponent data={eventsData} />
     </div>
   );
 };

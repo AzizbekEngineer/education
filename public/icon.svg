@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left pillars -->
+  <path d="M30 40 Q25 20 35 10 Q45 0 50 10 Q55 20 50 40 T30 40" fill="orange" stroke="black" stroke-width="2" />
+  <rect x="35" y="40" width="10" height="80" fill="goldenrod" stroke="black" stroke-width="2" />
+
+  <!-- Right pillars -->
+  <path d="M150 40 Q145 20 155 10 Q165 0 170 10 Q175 20 170 40 T150 40" fill="orange" stroke="black" stroke-width="2" />
+  <rect x="155" y="40" width="10" height="80" fill="goldenrod" stroke="black" stroke-width="2" />
+
+  <!-- Center arch -->
+  <path d="M70 120 V60 Q100 30 130 60 V120 Z" fill="red" stroke="black" stroke-width="2" />
+</svg>
