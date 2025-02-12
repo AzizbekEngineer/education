@@ -3,7 +3,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import news from "../../../../assets/images/new.webp";
 import { FaGripLinesVertical } from "react-icons/fa";
-import "./newsCard.scss";
+import "./newsSection.scss";
 
 const newsData = [
   {
@@ -40,7 +40,7 @@ const newsData = [
   },
 ];
 
-const NewsCard = () => {
+const NewsSection = () => {
   return (
     <div className="news">
       <h2 className="news__subtitle">Ko'proq yangiliklar</h2>
@@ -75,4 +75,4 @@ const NewsCard = () => {
   );
 };
 
-export default NewsCard;
+export default NewsSection;

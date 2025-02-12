@@ -4,7 +4,7 @@ import EventsComponent from "../../components/events/EventsComponent";
 import Opportunities from "./components/opportunities/Opportunities";
 import Success from "./components/success/Success";
 import Hero from "./components/hero/Hero";
-import NewsCard from "./components/newsCard/newsCard";
+import NewsSection from "./components/newsSection/NewsSection";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <Opportunities />
       <Success />
-      <NewsCard />
+      <NewsSection />
       <EventsComponent data={eventsData} />
     </div>
   );
