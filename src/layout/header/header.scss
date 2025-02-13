@@ -1,102 +1,102 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    transition: background-color 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+
+  &.scrolled {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #fff;
+    position: relative;
 
     &.scrolled {
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-        background-color: rgb(255, 255, 255);
+      color: #000;
     }
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &.black {
+      color: #000;
+      // background: #fff;
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+
+    &-open {
+      transition: 0.3s;
+      width: 200px;
+      flex-direction: column;
+      gap: 8px;
+      display: none;
+      position: absolute;
+      top: 22px;
+      background: #00d4c6;
+      padding: 15px;
+      left: -15px;
+      color: white;
     }
 
+    &:hover .header__dropdown-open {
+      display: flex;
+      /* Dropdown menyuni hover qilinganda ko'rsating */
+    }
+  }
+
+  &__menu {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: none;
+  }
+
+  @media (max-width: 875px) {
     &__list {
-        display: flex;
-        align-items: center;
-        gap: 32px;
-        color: #fff;
-        position: relative;
-
-        &.scrolled {
-            color: #000;
-        }
-
-        &.black {
-            color: #000;
-            background: #fff;
-        }
+      position: fixed;
+      left: 0;
+      top: 80px;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background: #2a2324 !important;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 50px 0 0 8%;
+      flex-direction: column;
+      transition: transform 0.7s ease;
+      z-index: 1;
+      transform: translateX(-100%);
     }
 
-    &__dropdown {
-        position: relative;
+    &__item {
+      color: white;
+    }
 
-        &-open {
-            transition: 0.3s;
-            width: 200px;
-            flex-direction: column;
-            gap: 8px;
-            display: none;
-            position: absolute;
-            top: 22px;
-            background: #00d4c6;
-            padding: 15px;
-            left: -15px;
-            color: white;
-        }
-
-        &:hover .header__dropdown-open {
-            display: flex;
-            /* Dropdown menyuni hover qilinganda ko'rsating */
-        }
+    &__show {
+      transform: translateX(0);
     }
 
     &__menu {
-        border: none;
-        background: transparent;
-        font-size: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        display: none;
+      display: block;
+      z-index: 1000;
     }
-
-    @media (max-width:875px) {
-        &__list {
-            position: fixed;
-            left: 0;
-            top: 80px;
-            width: 100%;
-            height: calc(100vh - 80px);
-            background: #2a2324 !important;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-            padding: 50px 0 0 8%;
-            flex-direction: column;
-            transition: transform 0.7s ease;
-            z-index: 1;
-            transform: translateX(-100%);
-        }
-
-        &__item {
-            color: white;
-        }
-
-        &__show {
-            transform: translateX(0);
-        }
-
-        &__menu {
-            display: block;
-            z-index: 1000;
-        }
-    }
+  }
 }

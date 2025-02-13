@@ -1,70 +1,72 @@
 .contact {
-    padding: 100px 0 20px;
-    background: white;
+  padding: 100px 0 20px;
+  background: #aaa3;
 
-    &__title {
-        text-align: center;
+  &__title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  &__form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    backdrop-filter: 3px;
+    border-radius: 10px;
+    gap: 15px;
+
+    label {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      input {
+        padding: 10px 16px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.336);
+        border-radius: 8px;
+      }
+
+      select,
+      option {
+        width: 100%;
+        padding: 8px 16px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.336);
+        border-radius: 8px;
+      }
     }
 
+    button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      border: 1px solid blue;
+      font-weight: bold;
+      background: blue;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 530px) {
     &__form {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.192);
-        border-radius: 10px;
-        gap: 15px;
+      padding: 15px 10px;
+    }
 
-        label {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-
-            input {
-                padding: 8px 16px;
-                outline: none;
-                border: 1px solid rgba(0, 0, 0, 0.336);
-                border-radius: 8px;
-            }
-
-            select,
-            option {
-                width: 100%;
-                padding: 8px 16px;
-                outline: none;
-                border: 1px solid rgba(0, 0, 0, 0.336);
-                border-radius: 8px;
-            }
-        }
-
-        button {
-            padding: 10px 20px;
-            border-radius: 8px;
-            color: black;
-            border: 1px solid black;
-            font-weight: bold;
-            background: transparent;
-
-        }
+    &__title {
+      font-size: 24px;
     }
 
     &__info {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+      flex-direction: column;
     }
-
-    @media (max-width:530px) {
-        &__form {
-            padding: 15px 10px;
-        }
-
-        &__title {
-            font-size: 24px;
-        }
-
-        &__info {
-            flex-direction: column;
-        }
-    }
+  }
 }
